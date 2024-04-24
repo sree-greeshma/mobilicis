@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Work Opportunities</title>
+  <link rel="stylesheet" href="styles.css">
+ <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <!-- Include Leaflet JavaScript -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <!-- Define CSS styles for the map container -->
+  <style>
+    #map {
+      height: 400px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Work Opportunities</h1>
+<h1>JAPANJOBS</h1>
+ <div id="google_translate_element"></div>
+<script  src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script>
+function googleTranslateElementInit(){
+new google.translate.TranslateElement(
+{pageLanguage: 'en'},
+'google_translate_element'
+);
+}
+</script>
+<div class="search-box fade-in">
+      <input type="text" placeholder="Search...">
+      <button type="submit">Search</button>
+    </div>
+    <nav class="fade-in">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="opportunities.html">Work Opportunities</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section class="opportunities">
+      <h2>Work Opportunities</h2>
+      <div class="opportunity-list">
+        <div class="opportunity-box">
+          <div class="opportunity">
+            <h3>Software Engineer</h3>
+            <p class="description">We are seeking a skilled software engineer to join our team...</p>
+            <p><strong>Location:</strong> Tokyo</p>
+          </div>
+        </div>
+        <div class="opportunity-box">
+          <div class="opportunity">
+            <h3>Marketing Specialist</h3>
+            <p class="description">We are looking for a talented marketing specialist to develop and implement marketing strategies...</p>
+            <p><strong>Location:</strong> Osaka</p>
+          </div>
+        </div>
+        <div class="opportunity-box">
+          <div class="opportunity">
+            <h3>Graphic Designer</h3>
+            <p class="description">We are hiring a creative graphic designer to produce engaging visuals for our company...</p>
+            <p><strong>Location:</strong> Kyoto</p>
+          </div>
+        </div>
+        <!-- Add more job opportunities as needed -->
+      </div>
+    </section>
+  </main>
+ <div> 
+            <!-- Google Map Copied Code -->
+            <iframe src="<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13627579.110253144!2d137.15386460000002!3d33.5001886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34674e0fd77f192f%3A0xf54275d47c665244!2sJapan!5e0!3m2!1sen!2sin!4v1713884862867!5m2!1sen!2sin"
+                    width="400"
+                    height="300"
+                    frameborder="0"
+                    style="border:0;"
+                    allowfullscreen=""
+                    aria-hidden="false"
+                    tabindex="0"> 
+            </iframe> 
+        </div> 
+
+  <script src="script.js"></script>
+</body>
+</html>

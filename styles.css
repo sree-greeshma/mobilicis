@@ -1,0 +1,215 @@
+body {
+    font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.main-content {
+  padding: 50px;
+  text-align: center;
+}
+header {
+  background-color: #4CAF50; /* Green */
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+.hero {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #f0f0f0;
+}
+
+.about, .opportunities, .contact {
+  padding: 50px 0;
+  text-align: center;
+}
+
+/* Animations */
+.fade-in {
+  opacity: 0;
+  animation: fadeInAnimation ease-in 1s forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Search box */
+.search-box {
+  position: relative;
+}
+
+.search-box input[type="text"] {
+  width: 200px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  transition: width 0.3s ease-in-out;
+}
+
+.search-box input[type="text"]:focus {
+  width: 300px;
+}
+.search-box button:hover {
+  background-color: #45a049;
+}
+
+/* Image container styles */
+.image-container {
+  position: relative;
+  height: 500px; /* Adjust height as needed */
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay h2 {
+  color: #ffffff;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.overlay p {
+  color: #ffffff;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: #4CAF50;
+  color: #ffffff;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.cta-button:hover {
+  background-color: #45a049;
+}
+.animation-container {
+  text-align: center;
+  margin-top: 200px;
+}
+
+.japan-text {
+  font-size: 100px;
+  font-weight: bold;
+  animation: changeColor 5s infinite;
+  /* New styles for vertical text */
+  writing-mode: vertical-rl; /* Vertical writing mode */
+  text-orientation: upright; /* Keep the text upright */
+}
+ .image-frame {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px; /* Adjust the maximum width as needed */
+  margin: 0 auto; /* Center the frame horizontally */
+}
+
+.image-frame img {
+  width: calc(33.33% - 10px); /* Adjust the width and margins as needed */
+  margin: 5px;
+  border: 1px solid #ddd; /* Add border for better visualization */
+  border-radius: 5px;
+}
+
+
+@keyframes changeColor {
+  0% {
+    color: red;
+  }
+  25% {
+    color: blue;
+  }
+  50% {
+    color: green;
+  }
+  75% {
+    color: orange;
+  }
+  100% {
+    color: red;
+  }
+}
+/* Existing styles */
+
+.opportunity-box {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+ background-color: #f0f0f0; 
+}
+
+.opportunity {
+  padding: 10px;
+}
+
+.opportunity h3 {
+  margin-top: 0;
+}
+
+.opportunity p {
+  margin-bottom: 5px;
+}
+
+.opportunity .description {
+  display: none; /* Initially hide the job descriptions */
+}
+
+.opportunity-box:hover .description {
+  display: block; /* Display the job description on hover */
+}
+
+.main-content {
+  text-align: center;
+  padding: 50px;
+}
+/* Styles for job listings */
+.job-listing {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
